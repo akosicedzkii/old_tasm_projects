@@ -1,0 +1,108 @@
+.stack
+.data
+.code
+
+begin:
+
+mov ah,06
+mov bh,a0h
+mov dx,184fh
+mov cx,0
+int 10h
+
+mov ah,02
+mov bh,0
+mov dl,68
+mov dh,3
+int 10h
+mov ah,02
+mov dl,'h'
+int 21h
+mov dl,'.'
+int 21h
+mov dl,'_'
+int 21h
+mov dl,'w'
+int 21h
+mov dl,'h'
+int 21h
+mov dl,'i'
+int 21h
+mov dl,'t'
+int 21h
+mov dl,'e'
+int 21h
+
+
+mov ah,06
+mov bh,23h
+mov dx,183bh
+mov cx,0
+int 10h
+
+mov ah,02
+mov bh,0
+mov dl,48
+mov dh,3
+int 10h
+mov ah,02
+mov dl,'g'
+int 21h
+mov dl,'r'
+int 21h
+mov dl,'e'
+int 21h
+mov dl,'e'
+int 21h
+mov dl,'n'
+int 21h
+
+mov ah,06
+mov bh,12h
+mov dx,1827h
+mov cx,0
+int 10h
+
+mov ah,02
+mov bh,0
+mov dl,28
+mov dh,3
+int 10h
+mov ah,02
+mov dl,'b'
+int 21h
+mov dl,'l'
+int 21h
+mov dl,'u'
+int 21h
+mov dl,'e'
+int 21h
+
+mov ah,06
+mov bh,01h
+mov dx,1813h
+mov cx,0
+int 10h
+
+mov ah,02
+mov bh,0
+mov dl,8
+mov dh,3
+int 10h
+mov ah,02
+mov dl,'b'
+int 21h
+mov dl,'l'
+int 21h
+mov dl,'a'
+int 21h
+mov dl,'c'
+int 21h
+mov dl,'k'
+int 21h
+
+
+
+mov ah,4ch
+int 21h
+end begin
